@@ -282,3 +282,81 @@ body {
         font-size: 1em;
     }
 }
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.footer-logo img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+    padding: 10px;
+}
+
+.footer-socials a {
+    margin: 0 5px;
+    color: #00bcd4;
+    font-size: 20px;
+}
+
+.footer-socials a:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-socials {
+        margin-top: 10px;
+    }
+}
